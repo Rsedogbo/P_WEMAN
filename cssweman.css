@@ -1,0 +1,920 @@
+/* personnel*/
+figure #moncercle{
+  background:#bfd70e;
+  border-radius:80%;
+  width:120px;
+  height:120px;
+  border:2px solid #679403;
+  padding: 7px;
+  margin: 7px;
+  text-align: center;
+  float: left;
+  position: relative;
+  /*display:inline;*/
+}
+
+/* div des 3 colones*/
+div#cont_col3 div {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    height: 100%;
+}
+
+/* la largeur des colones*/
+div#cont_col3 .col1 {
+    background-color: #9DF2CE ;
+    width: 18%;
+    height: 60%;
+}
+div#cont_col3 .col2 {
+    background-color: #9DK2CE ;
+    width: 50%;
+}
+div#cont_col3 .col3 {
+    background-color: #9DF2AE ;
+    width: 20%;
+}
+/*pour gerer les marge des colones et paragraphe*/
+div#cont_3 div .col1, p{
+    margin:3%;                       
+}
+div#cont_3 div .col1, .col2, .col3 {
+    margin:3%;
+}
+div#cont_3 div .col1, .col2, .col3, ul {
+    margin:2%;
+}
+/* colone 3 deux aside */
+.annonce{
+    background-color: burlywood ;
+    width: 100%;
+   height: 350px;
+    
+}
+
+
+.entete{
+    border: 1px solid #000;
+}
+#menu /* Ensemble du menu */
+{
+    display: block;
+
+    width: 100%;
+    
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*padding-left: 0;*/
+    height: 40px;
+    background: url('image/logo1copieF.png');
+    z-index:1;
+    position: relative;
+
+    
+}
+#menu ul{
+    padding : 0; /* pas de marge intérieure */
+    margin : 0; /* ni extérieure */
+    list-style : none; /* on supprime le style par défaut de la liste */
+    line-height : 20px; /* on définit une hauteur pour chaque élément */
+    text-align : center; /* on centre le texte qui se trouve dans la liste */
+    background-color:  #a3937f;
+    border: 1px solid #baa790;
+    border-bottom: none;
+    border-radius: 0px 0px 5px 5px;
+    
+    
+}
+
+nav{
+    z-index: 99999999;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+nav li a{
+    margin: 3px;
+}
+p.texte{
+    font-family:Georgia, Times, serif;
+    text-align: justify;
+    font-size: 15px;
+    margin: 3px;
+}
+#menu a /* Contenu des listes */
+{
+    color: #0033cc;
+    /**/display: block;/**/
+    font-size: 12px;
+    font-family: "Comic Sans MS", serif;
+    text-decoration: none;
+    padding: 0px;
+    
+}
+#menu li{
+    line-height: 20px;
+    
+}
+#menu ul li{
+    line-height: 20px;
+    border-bottom: 1px solid #baa790;
+}
+/**********************************************************************************************/
+ 
+#menu .float_left /* Éléments des listes */     
+{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+ 
+#menu .float_right{
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#menu li ul /* Sous-listes ## A MIS EN UNE LIGNE ## */
+{
+        position: absolute; /* Position absolue */
+        width: 144px; /* Largeur des sous-listes */
+    margin: auto 10px;
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+}
+#menu li ul li /* Eléments de sous-listes */
+{
+        /* pour ie qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous-liste */
+}
+ 
+#menu li ul a{
+    font-size: 10px;
+}
+html>body #menu li ul li               
+{
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+}
+ 
+#menu li ul ul
+{
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */     
+}
+ 
+/* IE ne reconnaissant pas le sélecteur ">" */
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+html>body #menu li ul ul               
+{
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+}
+ 
+/****************************************************************************************************/
+ 
+#menu a:hover /* Lorsque la souris passe sur un des liens */   
+{
+    color: #cc0000;
+}
+ 
+/*****************************************************************************************************/
+ 
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+ 
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+        min-height: 0; /* Corrige un bug sous IE */
+}
+/* slide */
+#slideshow {
+	position: relative;
+	width: 640px;
+	height: 320px;
+	padding: 0px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects 640PX */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+        z-index: 0;
+}
+ 
+/* avanced box-shadow
+ * tutorial @
+ * https://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
+*/
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position:relative;
+	width: 640px;
+	height: 310px;
+	overflow: hidden;
+}
+	
+/* on prévoit un petit espace gris pour la timeline */
+#slideshow .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}
+/* 
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 400%;
+	height: 300px;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+/* styles de nos légendes */
+#slideshow figcaption {
+	position:absolute;
+	left:0; right:0; bottom: 5px;
+	padding: 20px;
+	margin:0;
+	border-top: 1px solid rgb(225,225,225);
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #fff;
+	background: rgba(255,255,255,0.7);
+	color: #555;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+/* complétez le sélecteur : */
+#slideshow .slider {
+	/* ... avec la propriété animation */
+	animation: slider 27s infinite;
+}
+
+#timeline {
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 1px;
+	background: rgb(214,98,13);
+	background: rgba(214,98,13,.8);
+	width: 0;
+	/* fonction d'animation */
+	animation: timeliner 32s infinite;
+}
+
+
+/*fin slide*/
+
+
+/* slide COL3*/
+#slideshow3 {
+	position: relative;
+	width: 220px;
+	height: 210px;
+	padding: 0px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects 640PX */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+        z-index: 0;
+}
+ 
+/* avanced box-shadow
+ * tutorial @
+ * https://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
+*/
+#slideshow3:before,
+#slideshow3:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow3:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow3:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow3 .container3 {
+	position:relative;
+	width: 220px;
+	height: 300px;
+	overflow: hidden;
+}
+	
+/* on prévoit un petit espace gris pour la timeline */
+#slideshow3 .container3:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}
+/* 
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#slideshow3 .slider3 {
+	position: absolute;
+	left:0; top:0;
+	width: 400%;
+	height: 300px;
+}
+
+/* annulation des marges sur figure */
+#slideshow3 figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#slideshow3 figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+/* styles de nos légendes */
+#slideshow3 figcaption {
+	position:absolute;
+	left:0; right:0; bottom: 5px;
+	padding: 20px;
+	margin:0;
+	border-top: 1px solid rgb(225,225,225);
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #fff;
+	background: rgba(255,255,255,0.7);
+	color: #555;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+/* complétez le sélecteur : */
+#slideshow3 .slider3 {
+	/* ... avec la propriété animation */
+	animation: slider 27s infinite;
+}
+
+#timeline {
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 1px;
+	background: rgb(214,98,13);
+	background: rgba(214,98,13,.8);
+	width: 0;
+	/* fonction d'animation */
+	animation: timeliner 27s infinite;
+}
+
+
+/*fin slide COL3*/
+
+/* nav  */
+div.col1{
+    font-family:'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-align : left; /* on centre le texte qui se trouve dans la liste */
+    font-style: normal;
+    background-color: #f1ttf1;
+}
+.col1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.col1 li a {
+    display: block;
+    color: #000;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+.col1 li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+                   /* aside  */
+#logo
+{
+    display: flex ;
+    flex-direction: row;
+    align-items: baseline;
+    width: 180px;
+    float: left;
+    
+}
+
+#logo img
+{
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+}
+/* fin logo  */
+
+
+                 
+                     /* aside  */
+div.col31
+{
+    /*width:20%;*/
+    /*display:inline-block;*/
+    /*vertical-align: top;*/
+    padding-top:100px; /* aside  */
+    font-family:'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-align : left; /* on centre le texte qui se trouve dans la liste */
+    font-style: normal;
+    background-color: darkorange; 
+    /*float:right; */
+    /*overflow: hidden;*/
+} 
+
+
+            /* le corps */
+.col21{
+    width:60%;
+    display:inline-block;
+    vertical-align: top; 
+    padding-top:50px;
+
+}
+
+footer/* index */
+{
+    text-align:center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    font-size:15px;
+    background: #3F9E45;
+    height: 5%;
+}
+#copyrighte {
+	    font-size: 12px;
+	    font-style: italic;
+	    text-align: center;
+	    color: #CFCFCF;
+	    padding-top: 2px;
+	    padding-right: 10px;
+}
+    /* fin footer */
+
+/* demande d'inscription */
+
+    .titre {
+      background:#DED983;
+      color:#345071;
+      padding:.1em .2em;
+      font-size:1.2em;
+      border:5px outset #DED983;
+      position:relative;
+      margin-bottom:-1em;
+      width:30em;
+      margin-left:1em;
+      margin-top:3em;
+    }
+
+        fieldset {
+      border:none;
+      margin-bottom:1em;
+      width:40em;
+      padding-top:1.5em;
+    }
+        select {
+      margin-left:9em;
+      margin-bottom:0;
+    }
+        /* fieldset coordonnees */
+    fieldset#coordonnees {
+      background:#A4D8EE;
+      border:outset #A4D8EE;
+    }
+        #coordonnees label {
+      position:relative;
+      font-size:90%;
+      padding-top:.2em;
+      left:50px;
+    }
+       
+        /* les boutons submit et reset */
+    input[type="submit"], input[type="reset"] {
+      background:#DED983;
+      font:1.2em "Trebuchet MS", Verdana, sans-serif;
+      color:#345071;
+    }
+        p#buttonss {
+      text-align:center;
+    }
+/* fin de demande */
+
+
+              /* inscription */
+
+    /* fieldset message */
+    fieldset#message {
+      background:#9DF2CE;
+      border:outset #9DF2CE;
+    }
+    
+        /* zone de texte du message */
+    textarea {
+      font:.8em "Trebuchet MS", Verdana, sans-serif;
+      width:30em;
+      padding:.2em;
+    }
+    .titres {
+      background:#DED983;
+      color:#345071;
+      padding:.1em .2em;
+      font-size:1.2em;
+      border:5px outset #DED983;
+      position:relative;
+      margin-bottom:-1em;
+      width:30em;
+      margin-left:1em;
+      margin-top:3em;
+    }
+        #coordonnees input {
+      margin-left:9em;
+      line-height:1.4em;
+      margin-bottom:.2em;
+    }
+            /* fin inscription */
+         
+            
+            
+    /* debut connexion */         
+
+.container{
+    width:400px;
+    margin:0 auto;
+    margin-top:5%;
+}
+/* Bordered form */
+.container form {
+    width:90%;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+.container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.container input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.container input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+  /* fin connetion */  
+  
+
+
+/* nav  */
+
+div.col11{
+    /*width:20%;
+    display:table-cell ;
+    vertical-align: top;
+    padding-top:120px; /* aside  */
+    font-family:'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-align : left; /* on centre le texte qui se trouve dans la liste */
+    font-style: normal;
+    background-color: #f1ttf1;
+     /*float:left;*/
+}
+.col11 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 200px;*/
+    background-color: #f1f1f1;
+    /*height: 100%; /* Full height */
+    /*position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.col11 li a {
+    display: block;
+    color: #000;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+.col11 li a:hover {
+    background-color: #555;
+    color: white;
+}
+/* fin nav */
+
+       /*  a propos */
+div#cont_col3 div .col21 {
+    display: inline-block;
+    width: 100%;          
+    vertical-align: top;
+    height: 100%;
+}
+.annonc{
+    background-color: #baa790 ;  
+    width: 100%;   
+}
+
+/*  fin a propos */
+
+
+/* emploi du temps */
+#content{
+            background-color:#fff;
+            width:600px;
+            padding:5px;
+            margin:0 auto;
+            border-left:30px solid #1D81B6;
+            border-right:1px solid #ddd;
+            -moz-box-shadow:0px 0px 16px #aaa;
+        }
+#content h1{
+            font-family:"Trebuchet MS",sans-serif;
+            color:#1D81B6;
+            font-weight:normal;
+            font-style:normal;
+            font-size:56px;
+            text-shadow:1px 1px 1px #aaa;
+        }
+table.table1{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.table1 thead th{
+    padding:10px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tbody th{
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    background-color:#9DD929;
+    border:1px solid #93CE37;
+    border-right:3px solid #9ED929;
+    padding:0px 10px;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.02, rgb(158,217,41)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(123,192,67))
+        );
+    background: -moz-linear-gradient(
+        left bottom,
+        rgb(158,217,41) 2%,
+        rgb(139,198,66) 51%,
+        rgb(123,192,67) 87%
+        );
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.table1 tbody td{
+    padding:8px;
+    text-align:center;
+    background-color:#DEF3CA;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+            /* fin emploi du temps */
+
+/* demande d'inscription */
+
+    .titre {
+      background:#DED983;
+      color:#345071;
+      padding:.1em .2em;
+      font-size:1.2em;
+      border:5px outset #DED983;
+      position:relative;
+      margin-bottom:-1em;
+      width:30em;
+      margin-left:1em;
+      margin-top:3em;
+    }
+
+        fieldset {
+      border:none;
+      margin-bottom:1em;
+      width:40em;
+      padding-top:1.5em;
+    }
+        select {
+      margin-left:9em;
+      margin-bottom:0;
+    }
+        /* fieldset coordonnees */
+    fieldset#coordonnees {
+      background:#A4D8EE;
+      border:outset #A4D8EE;
+    }
+        #coordonnees label {
+      position:relative;
+      font-size:90%;
+      padding-top:.2em;
+      left:50px;
+    }
+       
+        /* les boutons submit et reset */
+    input[type="submit"], input[type="reset"] {
+      background:#DED983;
+      font:1.2em "Trebuchet MS", Verdana, sans-serif;
+      color:#345071;
+    }
+        p#buttonss {
+      text-align:center;
+    }
+/* fin de demande */
+
+
+              /* inscription */
+
+    /* fieldset message */
+    fieldset#message {
+      background:#9DF2CE;
+      border:outset #9DF2CE;
+    }
+    
+        /* zone de texte du message */
+    textarea {
+      font:.8em "Trebuchet MS", Verdana, sans-serif;
+      width:30em;
+      padding:.2em;
+    }
+    .titres {
+      background:#DED983;
+      color:#345071;
+      padding:.1em .2em;
+      font-size:1.2em;
+      border:5px outset #DED983;
+      position:relative;
+      margin-bottom:-1em;
+      width:30em;
+      margin-left:1em;
+      margin-top:3em;
+    }
+        #coordonnees input {
+      margin-left:9em;
+      line-height:1.4em;
+      margin-bottom:.2em;
+    }
+            /* fin inscription */
